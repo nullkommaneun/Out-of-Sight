@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Silent Break – Framework</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div id="app">
+    <canvas id="game" width="960" height="540" aria-label="Spielanzeige"></canvas>
+    <div id="diag-overlay" hidden>
+      <div class="diag-head">
+        <strong>Diagnostics</strong>
+        <span id="diag-status">OK</span>
+        <button id="diag-clear" title="Meldungen löschen">Clear</button>
+        <button id="diag-pause" title="Loop pausieren/resumen">Pause</button>
+        <button id="diag-step" title="Einzelbild vor">Step</button>
+      </div>
+      <div class="diag-body" id="diag-body"></div>
+      <div class="diag-foot">
+        <div id="diag-metrics"></div>
+        <div class="hints">
+          <kbd>F1</kbd> Overlay · <kbd>F5</kbd> Pause · <kbd>F6</kbd> Step · <kbd>L</kbd> Logs an/aus
+        </div>
+      </div>
+    </div>
+  </div>
+  <noscript>Bitte JavaScript aktivieren.</noscript>
+  <script type="module" src="./bootstrap.js"></script>
+</body>
+</html>
